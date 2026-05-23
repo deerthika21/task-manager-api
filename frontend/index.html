@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- HEADER -->
+        <div class="header">
+
+            <h1>Task Manager</h1>
+
+            <p>
+                Manage your daily tasks easily
+            </p>
+
+        </div>
+
+        <!-- INFO -->
+        <div class="info-box">
+
+            <h3>Instructions</h3>
+
+            <ul>
+                <li>
+                    Register a new account first
+                </li>
+
+                <li>
+                    Login again to view your tasks
+                </li>
+
+                <li>
+                    Create tasks after login
+                </li>
+
+                <li>
+                    Click Complete to mark task done
+                </li>
+
+                <li>
+                    Click Delete to remove task
+                </li>
+            </ul>
+
+        </div>
+
+        <!-- REGISTER -->
+        <div class="card">
+
+            <h2>Register</h2>
+
+            <input type="text" id="register-username" placeholder="Enter username">
+            <input type="email" id="register-email" placeholder="Enter email">
+            <input type="password" id="register-password" placeholder="Enter password">
+
+            <button onclick="register()">
+                Register
+            </button>
+
+        </div>
+
+        <!-- LOGIN -->
+        <div class="card">
+
+            <h2>Login</h2>
+
+            <input type="email" id="login-email" placeholder="Enter email">
+            <input type="password" id="login-password" placeholder="Enter password">
+
+            <button onclick="login()">
+                Login
+            </button>
+
+        </div>
+
+        <!-- CREATE TASK -->
+        <div class="card">
+
+            <h2>Create Task</h2>
+
+            <div class="task-input">
+
+                <input type="text" id="task-title" placeholder="Enter task title">
+
+                <button onclick="createTask()">
+                    Add
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- TASKS -->
+        <div class="card">
+
+            <h2>Your Tasks</h2>
+
+            <div id="tasks"></div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
