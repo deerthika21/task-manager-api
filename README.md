@@ -1,75 +1,38 @@
-✅ Task Manager API
+# ✅ Task Manager
 
-A full-stack Task Management web application that helps users manage daily tasks efficiently with secure authentication and CRUD operations.
+A full-stack task management app with secure login and CRUD operations.
 
-✨ What it does
+## 🌐 Live Demo
+👉 [Try the app here](https://task-manager-api-nu-coral.vercel.app/)
 
-Register and login securely
-Create daily tasks
-View all tasks
-Mark tasks as completed
-Delete tasks instantly
-Stores user and task data in SQLite database
-JWT-based authentication system
+## ✨ Features
+- 🔐 Register & login securely
+- ➕ Create, view, complete & delete tasks
+- 🔑 JWT authentication
+- 🔒 Password hashing with bcrypt
+- 💾 SQLite database storage
 
-🔥 Features
+## 🛠️ Tech Stack
+- **Backend:** FastAPI + SQLAlchemy + SQLite
+- **Auth:** JWT + bcrypt
+- **Frontend:** HTML + CSS + JavaScript
+- **Deployed on:** Render + Vercel
 
-Secure password hashing using bcrypt
-Token-based authentication
-FastAPI REST APIs
-Responsive frontend UI
-CRUD task operations
-Frontend connected with deployed backend
+## 🚀 Run Locally
 
-🛠️ Tech Stack
-
-Backend: FastAPI + SQLAlchemy + SQLite
-Authentication: JWT + Passlib + bcrypt
-Frontend: HTML + CSS + JavaScript
-Deployment: Render + Vercel
-
-📂 Project Structure
-
-task-manager/
-│
-├── backend/
-│   ├── app/
-│   ├── requirements.txt
-│
-├── frontend/
-│   ├── index.html
-│   ├── style.css
-│   ├── script.js
-│
-└── README.md
-
-🚀 Run Locally
-
-Backend
-
+**Backend**
+```bash
 cd backend
 python -m venv venv
 venv\Scripts\activate
 pip install -r requirements.txt
 uvicorn app.main:app --reload
+```
 
-Frontend
+**Frontend**
+```bash
+Open index.html with Live Server
+```
 
-Open index.html using Live Server
-
-🌐 Deployment
-
-Frontend deployed on Vercel
-Backend deployed on Render
-
-📌 Future Improvements
-
-Task deadlines and reminders
-Dark mode UI
-Task categories
-Cloud database integration
-Drag and drop task management
-
-👩‍💻 Author
-
-Deerthika J
+## 👩‍💻 Author
+**Deerthika J**
