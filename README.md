@@ -1,47 +1,75 @@
-# Task Manager API
+✅ Task Manager API
 
-A simple full-stack Task Manager application built using:
+A full-stack Task Management web application that helps users manage daily tasks efficiently with secure authentication and CRUD operations.
 
-- FastAPI
-- SQLite
-- JWT Authentication
-- HTML/CSS/JavaScript
+✨ What it does
 
-## Features
+Register and login securely
+Create daily tasks
+View all tasks
+Mark tasks as completed
+Delete tasks instantly
+Stores user and task data in SQLite database
+JWT-based authentication system
 
-- User Registration
-- User Login
-- JWT Authentication
-- Create Tasks
-- View Tasks
-- Complete Tasks
-- Delete Tasks
-- Protected Routes
+🔥 Features
 
-## Backend Setup
+Secure password hashing using bcrypt
+Token-based authentication
+FastAPI REST APIs
+Responsive frontend UI
+CRUD task operations
+Frontend connected with deployed backend
 
-```bash
+🛠️ Tech Stack
+
+Backend: FastAPI + SQLAlchemy + SQLite
+Authentication: JWT + Passlib + bcrypt
+Frontend: HTML + CSS + JavaScript
+Deployment: Render + Vercel
+
+📂 Project Structure
+
+task-manager/
+│
+├── backend/
+│   ├── app/
+│   ├── requirements.txt
+│
+├── frontend/
+│   ├── index.html
+│   ├── style.css
+│   ├── script.js
+│
+└── README.md
+
+🚀 Run Locally
+
+Backend
+
 cd backend
-
+python -m venv venv
+venv\Scripts\activate
 pip install -r requirements.txt
-
 uvicorn app.main:app --reload
-```
 
-## Frontend Setup
+Frontend
 
-Open:
+Open index.html using Live Server
 
-```text
-frontend/index.html
-```
+🌐 Deployment
 
-using Live Server.
+Frontend deployed on Vercel
+Backend deployed on Render
 
-## API Documentation
+📌 Future Improvements
 
-Swagger UI:
+Task deadlines and reminders
+Dark mode UI
+Task categories
+Cloud database integration
+Drag and drop task management
 
-```text
-http://127.0.0.1:8000/docs
-```
+👩‍💻 Author
+
+Deerthika J
